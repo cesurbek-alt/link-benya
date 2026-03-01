@@ -1,0 +1,303 @@
+/* ===== Gradient Background Animation ===== */
+.gradient-bg {
+    background: linear-gradient(135deg,
+            #0b1120 0%,
+            #1a0b2e 25%,
+            #0f172a 50%,
+            #0b1f3a 75%,
+            #0b1120 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+.gradient-bg-light {
+    background: linear-gradient(135deg,
+            #e0e7ff 0%,
+            #f0e6ff 25%,
+            #e8f4f8 50%,
+            #f0e6ff 75%,
+            #e0e7ff 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== Glassmorphism Card ===== */
+.glass-card {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(139, 92, 246, 0.35);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15),
+        0 0 30px rgba(34, 211, 238, 0.08);
+}
+
+.glass-card-light {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-light:hover {
+    background: rgba(255, 255, 255, 0.75);
+    border-color: rgba(139, 92, 246, 0.35);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.1),
+        0 0 30px rgba(34, 211, 238, 0.06);
+}
+
+/* ===== Glow Effects ===== */
+.glow-purple {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3),
+        0 0 40px rgba(139, 92, 246, 0.1);
+}
+
+.glow-cyan {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.3),
+        0 0 40px rgba(34, 211, 238, 0.1);
+}
+
+/* ===== Avatar Ring ===== */
+.avatar-ring {
+    background: conic-gradient(from 0deg,
+            #a855f7,
+            #22d3ee,
+            #2dd4bf,
+            #ec4899,
+            #a855f7);
+    padding: 3px;
+    border-radius: 9999px;
+    animation: avatarSpin 6s linear infinite;
+}
+
+@keyframes avatarSpin {
+    from {
+        background: conic-gradient(from 0deg, #a855f7, #22d3ee, #2dd4bf, #ec4899, #a855f7);
+    }
+
+    to {
+        background: conic-gradient(from 360deg, #a855f7, #22d3ee, #2dd4bf, #ec4899, #a855f7);
+    }
+}
+
+/* ===== Floating Orbs ===== */
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.25;
+    animation: orbFloat 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.orb-1 {
+    width: 300px;
+    height: 300px;
+    background: #a855f7;
+    top: -50px;
+    right: -80px;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 250px;
+    height: 250px;
+    background: #22d3ee;
+    bottom: 20%;
+    left: -100px;
+    animation-delay: 3s;
+}
+
+.orb-3 {
+    width: 200px;
+    height: 200px;
+    background: #ec4899;
+    bottom: -50px;
+    right: -60px;
+    animation-delay: 5s;
+}
+
+@keyframes orbFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -20px) scale(1.05);
+    }
+
+    66% {
+        transform: translate(-15px, 15px) scale(0.95);
+    }
+}
+
+/* ===== Fade-in Animations ===== */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInUp 0.7s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Stagger Delays ===== */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-800 {
+    animation-delay: 0.8s;
+}
+
+.delay-900 {
+    animation-delay: 0.9s;
+}
+
+.delay-1000 {
+    animation-delay: 1.0s;
+}
+
+/* ===== Social Icon Hover ===== */
+.social-icon {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.15);
+}
+
+/* ===== Theme Toggle Button ===== */
+.theme-toggle {
+    transition: all 0.4s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(30deg) scale(1.1);
+}
+
+/* ===== Pulse Ring ===== */
+.pulse-ring {
+    position: relative;
+}
+
+.pulse-ring::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 9999px;
+    border: 2px solid rgba(139, 92, 246, 0.4);
+    animation: pulseRing 2s ease-out infinite;
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+/* ===== Link Icon Gradient ===== */
+.icon-gradient {
+    background: linear-gradient(135deg, #a855f7, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== Click Ripple ===== */
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.ripple:active::after {
+    opacity: 1;
+}
+
+/* ===== Status Indicator ===== */
+.status-online {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+    }
+}
