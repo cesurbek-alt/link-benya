@@ -72,10 +72,10 @@ export const links = [
     {
         id: 6,
         title: 'TikTok',
-        url: 'https://tiktok.com/@mtrcompany',
+        url: 'https://tiktok.com/@ustalarnidodalari',
         icon: FaTiktok,
         color: '#25f4ee',
-        description: 'MTR Company videolari',
+        description: 'Ustalarni Dodalari videolari',
     },
     {
         id: 7,
@@ -96,5 +96,5 @@ export const socialLinks = [
     { id: 's3', icon: FaYoutube, url: 'https://youtube.com/@SaraahFood', label: 'YouTube', color: '#ef4444' },
     { id: 's4', icon: FaGithub, url: 'https://github.com/cesurcesurbek', label: 'GitHub', color: '#a855f7' },
     { id: 's5', icon: FaPinterest, url: 'https://pinterest.com/cesurcesurbek', label: 'Pinterest', color: '#e60023' },
-    { id: 's6', icon: FaTiktok, url: 'https://tiktok.com/@mtrcompany', label: 'TikTok', color: '#25f4ee' },
+    { id: 's6', icon: FaTiktok, url: 'https://tiktok.com/@ustalarnidodalari', label: 'TikTok', color: '#25f4ee' },
 ];
