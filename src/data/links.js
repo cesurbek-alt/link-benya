@@ -62,12 +62,20 @@ export const links = [
         description: 'Ilhom va g\'oyalar',
     },
     {
+        id: 3,
+        title: 'YouTube Kanal',
+        url: 'https://youtube.com/@SaraahFood',
+        icon: FaYoutube,
+        color: '#ef4444',
+        description: 'Saraah Food videolar',
+    },
+    {
         id: 6,
         title: 'TikTok',
-        url: 'https://tiktok.com/@cesurcesurbek',
+        url: 'https://tiktok.com/@mtrcompany',
         icon: FaTiktok,
         color: '#25f4ee',
-        description: 'Qisqa videolar',
+        description: 'MTR Company videolari',
     },
     {
         id: 7,
@@ -85,7 +93,8 @@ export const links = [
 export const socialLinks = [
     { id: 's1', icon: FaTelegram, url: 'https://t.me/djazur', label: 'Telegram', color: '#0ea5e9' },
     { id: 's2', icon: FaInstagram, url: 'https://instagram.com/djazur', label: 'Instagram', color: '#e1306c' },
+    { id: 's3', icon: FaYoutube, url: 'https://youtube.com/@SaraahFood', label: 'YouTube', color: '#ef4444' },
     { id: 's4', icon: FaGithub, url: 'https://github.com/cesurcesurbek', label: 'GitHub', color: '#a855f7' },
     { id: 's5', icon: FaPinterest, url: 'https://pinterest.com/cesurcesurbek', label: 'Pinterest', color: '#e60023' },
-    { id: 's6', icon: FaTiktok, url: 'https://tiktok.com/@cesurcesurbek', label: 'TikTok', color: '#25f4ee' },
+    { id: 's6', icon: FaTiktok, url: 'https://tiktok.com/@mtrcompany', label: 'TikTok', color: '#25f4ee' },
 ];
